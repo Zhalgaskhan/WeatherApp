@@ -1,0 +1,10 @@
+<!doctype html>
+<title>Weather App v.1</title>
+{% if name %}
+  <h1 style="text-align:center">{{ name.split()[0] }}, {{name.split()[1]}}</h1>
+  <h2 style="text-align:center">{{ name.split()[2] }}°С </h2>
+  <h2 style="text-align:center">{{ name.split()[3] }} {{ name.split()[4] }}</h2>
+  <h2 style="text-align:center"> {{ name.split()[5] }}</h2>
+{% else %}
+  <h1>Hello, World!</h1>
+{% endif %}
